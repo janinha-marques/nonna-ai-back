@@ -1,0 +1,15 @@
+meta {
+  name: Atualizar Configurações
+  type: http
+  seq: 2
+}
+post {
+  url: http://localhost:8080/configuracoes
+  body: json
+  auth: none
+}
+body:json {
+  {
+    "horarioFuncionamento": "Ter a Dom - 19h as 23:30h"
+  }
+}

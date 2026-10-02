@@ -1,0 +1,20 @@
+meta {
+  name: Criar Pedido
+  type: http
+  seq: 1
+}
+post {
+  url: http://localhost:8080/pedidos
+  body: json
+  auth: none
+}
+body:json {
+  {
+    "idCliente": "884d5d4d-cc83-4a11-a8cf-81ff0a184e9b",
+    "tipoEntrega": "Entrega",
+    "endereco": "Rua X",
+    "formaDePagamento": "Cartão",
+    "telefone": "999999999",
+    "produtosIds": ["1b80dbfa-30a2-4a00-af15-585bb049e6aa"]
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Criar Produto
+  type: http
+  seq: 2
+}
+post {
+  url: http://localhost:8080/produtos
+  body: json
+  auth: none
+}
+body:json {
+  {
+    "nome": "Pudim",
+    "descricao": "Pudim de leite condensado",
+    "preco": 15.00,
+    "categoria": "2d02c4f1-39fa-4cc9-b7b2-a42e7bde93e4",
+    "imagem": "http://imagem.com/pudim.png"
+  }
+}

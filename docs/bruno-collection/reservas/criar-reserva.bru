@@ -1,0 +1,18 @@
+meta {
+  name: Criar Reserva
+  type: http
+  seq: 1
+}
+post {
+  url: http://localhost:8080/reserva
+  body: json
+  auth: none
+}
+body:json {
+  {
+    "idCliente": "884d5d4d-cc83-4a11-a8cf-81ff0a184e9b",
+    "horario": "2026-10-15T20:00:00",
+    "quantidadeDePessoas": 4,
+    "tipoEvento": "Aniversário"
+  }
+}
